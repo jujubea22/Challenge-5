@@ -1,71 +1,82 @@
 body {
-  font-family: 'Century Gothic', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+  font-family: 'Ariel', sans-serif;
+  font-size: 12px;
+  line-height: 2;
 }
 
-textarea {
+/* text area styling for the calendar */
+.textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #05fceb;
+  color: #fa00b3;
   border-left: 1px solid black;
   padding: 10px;
 }
 
+/* styling for the Jumbotron */
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: rgb(4, 252, 8);
+  background-color:  #fa00b3;
+  color: rgb(8, 226, 246);
   border-radius: 0;
   border-bottom: 10px solid black;
 }
 
-.description {
+.description{
   white-space: pre-wrap;
+  flex-wrap: wrap;
 }
 
-.time-block {
+/* text and border styling for the block containing the time hours */
+.time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* border styling for the row that will hold the text and meeting events */
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 2px solid black;
+  background-color: rgba(8, 226, 246, 0.445);
 }
 
+/* style for the box displaying the hour on the schedule */
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: transparent;
+  color: #0f0f0e;
+  border-top: 1px dashed transparent;
 }
 
+/* Styling for the calendar text boxes depending on the current hour */
 .past {
-  background-color: #878686;
-  color: white;
+  background-color: transparent;
+  color: rgb(21, 19, 19);
 }
 
 .present {
-  background-color: #ff61d2;
-  color: white;
+  background-color: #64ff61;
+  color: rgb(38, 7, 192);
 }
 
 .future {
-  background-color: #ddb677;
-  color: white;
+  background-color: #77dd77;
+  color: rgba(215, 35, 191, 0.597);
 }
 
+/* Styles save button for the calendar */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: rgb(249, 249, 152);
+  color: #fa00b3;
 }
 
+/* style when hovering on mouse */
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  color: rgb(8, 226, 246);
+  transition: all .3s ease-in-out;
 }
