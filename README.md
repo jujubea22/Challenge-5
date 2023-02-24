@@ -13,3 +13,4 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist" -Acceptance Criteria
+![WorkdayScheduler](https://user-images.githubusercontent.com/114043890/221094823-12a2188f-2280-4245-8514-513f950c0944.png)
