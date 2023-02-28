@@ -27,84 +27,92 @@
     </header>
     <div class="container">
 
+
       Schedule times:
 
   <!-- Timeblocks -->
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time1"><h3>6:00 AM</h3></div>
-  <div class="col-md-10" id="text1"><textBox class="form-control textBox row" id="calendartextDetails1" rows="1"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="1">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time2"><h3>7:00 AM</h3></div>
-  <div class="col-md-10" id="text2"><textBox a class="form-control textBox row" id="calendartextDetails2" rows="2"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="2">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time3"><h3>8:00 AM</h3></div>
-  <div class="col-md-10" id="text3"><textBox  class="form-control textBox row" id="calendartextDetails3" rows="3"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="2">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time4"><h3>9:00 AM</h3></div>
-  <div class="col-md-10" id="text4"><textBox  class="form-control textBox row" id="calendartextDetails4" rows="4"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="3">Save</button></div>
-</div>
-  <div class="row time-block">
-  <div class="col-md-1 hour" id="time5"><h3>10:00 AM</h3></div>
-  <div class="col-md-10" id="text5"><textBox class="form-control textBox row" id="calendartextDetails5" rows="5"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="5">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time6"><h3>11:00 AM</h3></div>
-  <div class="col-md-10" id="text6"><textBox class="form-control textBox row" id="calendartextDetails6" rows="6"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="6">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time7"><h3>12:00 PM</h3></div>
-  <div class="col-md-10" id="text7"><textBox class="form-control textBox row" id="calendartextDetails7" rows="7"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="7">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time8"><h3>1:00 PM</h3></div>
-  <div class="col-md-10" id="text8"><textBox class="form-control textBox row" id="calendartextDetails8" rows="8"></textBox></div>
-  <div class="col-md-1 "><button type="button" class="btn btn-secondary btn-lg saveBtn" value="8">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time9"><h3>2:00 PM</h3></div>
-  <div class="col-md-10" id="text9"><textBox class="form-control textBox row" id="calendartextDetails9" rows="9"></textBox></div>
-  <div class="col-md-1 "><button type="button" class="btn btn-secondary btn-lg saveBtn" value="9">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time10"><h3>3:00 PM</h3></div>
-  <div class="col-md-10" id="text10"><textBox class="form-control textBox row" id="calendartextDetails10" rows="10"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="10">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time11"><h3>4:00 PM</h3></div>
-  <div class="col-md-10" id="text11"><textBox class="form-control textBox row" id="calendartextDetails11" rows="11"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="11">Save</button></div>
-</div>
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time12"><h3>5:00 PM</h3></div>
-  <div class="col-md-10" id="text12"><textBox class="form-control textBox row" id="calendartextDetails12" rows="12"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="12">Save</button></div>
-</div>  
-<div class="row time-block">
-  <div class="col-md-1 hour" id="time13"><h3>6:00 PM</h3></div>
-  <div class="col-md-10" id="text13"><textBox  class="form-control textBox row" id="calendartextDetails13" rows="13"></textBox></div>
-  <div class="col-md-1"><button type="button" class="btn btn-secondary btn-lg saveBtn" value="13">Save</button></div>
-</div> 
 
-var save = localStorage.getItem("mytime");
-localStorage.getItem() 
+  <div id="hour-1" class="row timeBox">
+    <div class="col-1 hour"><h3>6:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-2" class="row timeBox">
+    <div class="col-1 hour"><h3>7:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-3" class="row timeBox">
+    <div class="col-1 hour"><h3>8:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-4" class="row timeBox">
+    <div class="col-1 hour"><h3>9:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-5" class="row timeBox">
+    <div class="col-1 hour"><h3>10:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-6" class="row timeBox">
+    <div class="col-1 hour"><h3>11:00 AM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-7" class="row timeBox">
+    <div class="col-1 hour"><h3>12:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-8" class="row timeBox">
+    <div class="col-1 hour"><h3>1:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-9" class="row timeBox">
+    <div class="col-1 hour"><h3>2:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-10" class="row timeBox">
+    <div class="col-1 hour"><h3>3:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-11" class="row timeBox">
+    <div class="col-1 hour"><h3>4:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-12" class="row timeBox">
+    <div class="col-1 hour"><h3>5:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
+  
+  <div id="hour-13" class="row timeBox">
+    <div class="col-1 hour"><h3>6:00 PM</h3></div>
+    <textarea class="col-10 description"></textarea>
+    <btn class="btn saveBtn col-1"><i class="fa-check"></i></btn>
+  </div>
 
-function myFunction() {
-  var x = localStorage.getItem("mytime");
-  document.getElementById("demo").innerHTML = x;
-}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 
