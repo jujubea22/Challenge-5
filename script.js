@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#currentDay").text(moment().format("mm, dd, yy"));
+    $("#currentDay").text(moment().format("MM/DD/YYYY"));
 //adding function to save button on click//
     $('.saveBtn').on('click', function(){
       
@@ -33,3 +33,4 @@ function timeStop()   {
     timeStop();
    
 });
+
