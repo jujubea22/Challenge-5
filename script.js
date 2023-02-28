@@ -28,6 +28,7 @@ function timeStop()   {
             $(this).children('textDetails').addClass('future');
         }
         }) 
+       console.log("Information saved!");
     }
     setInterval(timeStop,1000);
     timeStop();
